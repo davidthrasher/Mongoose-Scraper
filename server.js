@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
-// 'mongodb://heroku_kctvqn0f:q3u2tstaa86but2nn5fnd451fv@ds139844.mlab.com:39844/heroku_kctvqn0f'
-mongoose.connect('mongodb://localhost/metalsucksdb');
+
+mongoose.connect('mongodb://heroku_3wc26jn7:r61oc5309hphcmm5esfi904a8i@ds135514.mlab.com:35514/heroku_3wc26jn7');
 var db = mongoose.connection;
 
 db.on("error", function(error) {
